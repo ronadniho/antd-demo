@@ -13,7 +13,6 @@ class FilterWrap extends Component{
     this.props.typeData&&this.getBookList(this.props.typeData[0].id);
   }
   getBookList(id,e){
-    console.log(e)
     this.props.getBookList(id)
   }
   render(){
