@@ -1,17 +1,13 @@
 /**
  * Created by Administrator on 2018/3/4.
  */
-const { injectBabelPlugin } = require('react-app-rewired');
-const rewireLess = require('react-app-rewire-less');
+const {injectBabelPlugin} = require('react-app-rewired');
 
 
 module.exports = function override(config, env) {
-    // do stuff with the webpack config...
-    // config = injectBabelPlugin(['import', { libraryName: 'antd', libraryDirectory: 'es', style: 'css' }], config);
+  // do stuff with the webpack config...
+  // config = injectBabelPlugin(['import', { libraryName: 'antd', libraryDirectory: 'es', style: 'css' }], config);
 
-    config = injectBabelPlugin(['import', { libraryName: 'antd', style: true }], config);
-    config = rewireLess.withLoaderOptions({
-        modifyVars: { "@primary-color": "#1DA57A" },
-    })(config, env);
-    return config;
+  config = injectBabelPlugin(['import', { libraryName: 'antd-mobile', style: 'css' }], config);
+  return config;
 };

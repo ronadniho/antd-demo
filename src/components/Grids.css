@@ -1,0 +1,20 @@
+.am-grid.am-grid-square .am-grid-item .am-grid-item-inner-content .am-grid-icon {
+  width: 40% !important;
+}
+
+.book-list-wrap .b-tags {
+  float: left;
+  list-style: none;
+  padding: 0 16px;
+}
+.book-list-wrap .b-tags li {
+  float: left;
+  display: inline-block;
+  width: 52px;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 8px;
+  font-size: 0.85rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 40px;
+}
