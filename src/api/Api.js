@@ -6,7 +6,6 @@ import Axios from 'axios';
 export default {
   get (url, params) {
     console.log(url)
-    console.log(params)
     return new Promise((resolve, reject) => {
       Axios.get(url, {params: params})
         .then(response => {

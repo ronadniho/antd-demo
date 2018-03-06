@@ -11,7 +11,6 @@ import Api from '../api/Api.js';
 
 import './Main.css';
 
-
 const typeData = [{name: '男生小说', id: 'boy'}, {name: '女生小说', id: 'girl'}, {name: '出版书籍', id: 'pub'}]
 
 function BookTags(props) {
